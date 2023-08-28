@@ -81,7 +81,7 @@ function App() {
             </div>
           ))
         ) : (
-          <p>You currently have no tasks add some</p>
+          <p>You currently have no tasks</p>
         )}
       </div>
 
