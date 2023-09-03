@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .App {
   display: flex;
   flex-direction: column;
@@ -8,9 +9,7 @@
   padding: 10px;
   border-radius: 8px;
 }
-.App h1 {
-  text-align: center;
-}
+
 .form {
   display: flex;
   justify-content: space-between;
@@ -18,16 +17,14 @@
   width: 100%;
   margin-bottom: 12px;
 }
+
 .form input[type="text"] {
   padding: 10px;
   width: 85%;
   border: 1px solid #eee;
   border-radius: 6px;
 }
-.form input[type="text"]:focus,
-.form button[type="submit"]:focus {
-  outline: none;
-}
+
 .form button[type="submit"] {
   background-color: #24a0ed;
   color: #fff;
@@ -36,42 +33,37 @@
   padding: 10px;
   cursor: pointer;
 }
+
 .todo-listItems {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .todo-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
+
 .item-content {
   width: 60%;
 }
+
 .todo-item button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
   padding: 8px;
 }
-.todo-item button:focus {
-  outline: none;
-}
-.update-item {
-  background-color: goldenrod;
-  color: #fff;
-}
-.delete-item {
-  background-color: red;
-  color: #fff;
-}
+
 .update-form {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+
 .update-new-input {
   width: 80%;
   border-radius: 6px;
@@ -79,8 +71,58 @@
   padding: 8px;
   outline: none;
 }
+
+/* ... (existing CSS styles) ... */
+
+/* Style for the delete button */
+.delete-item {
+  background-color: #e74c3c; /* Red color */
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px; /* Increased padding for a larger button */
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+
+  /* Add a hover effect */
+  &:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+}
+
+/* Style for the update button */
+.update-item {
+  background-color: #27ae60; /* Green color */
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px; /* Increased padding for a larger button */
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+
+  /* Add a hover effect */
+  &:hover {
+    background-color: #219a52; /* Darker green on hover */
+  }
+}
+
+/* ... (existing CSS styles) ... */
+
 .update-new-btn {
   background-color: darkorchid;
   color: #fff;
   cursor: pointer;
 }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .App {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+
+  .form input[type="text"] {
+    width: 70%; /* Adjust the input width for smaller screens */
+  }
+}
+
+/* Add more media queries as needed for different screen sizes */
