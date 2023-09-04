@@ -1,71 +1,99 @@
-# Getting Started with Create React App
+# Task-handler
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and efficient Todo List web application built using the MERN (MongoDB, Express, React, Node.js) stack.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Create, read, update, and delete todo items.
+- Responsive design for various screen sizes.
+- Intuitive and user-friendly interface.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - React: JavaScript library for building user interfaces.
+  - Axios: HTTP client for making API requests.
+  - CSS3: For styling.
 
-### `npm test`
+- **Backend:**
+  - Node.js: JavaScript runtime environment.
+  - Express: Web application framework.
+  - MongoDB: NoSQL database for storing todo items and user data.
+  - Mongoose: Object Data Modeling (ODM) library for MongoDB.
+  - CORS: Middleware for handling cross-origin requests.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/Iamtheusername112/TodoApp-frontend.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd TASKMANAGER
+   ```
 
-### `npm run eject`
+3. Install server dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd backend
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Install client dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   cd client
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Create a `.env` file in the server directory with the following variables:
 
-## Learn More
+   ```
+   PORT=5500
+   DB_CONNECT=your_mongodb_uri
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+6. Start the server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   cd backend
+   npm start
+   ```
 
-### Code Splitting
+7. Start the client:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   cd client
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+8. Open your web browser and go to [http://localhost:5500](http://localhost:5500) to use the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+- Add new todo items by entering a task and clicking "Add Todo."
+- Edit or delete todo items by clicking the edit or delete buttons.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+If you'd like to contribute to this project, please follow these guidelines:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive commit messages.
+4. Push your changes to your forked repository.
+5. Create a pull request to the main repository, explaining your changes.
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Have questions or feedback? Feel free to reach out:
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# TodoApp-frontend
+Name: Francis Iwu
+Email: [iwufrancischisom20@gmail.com]
+LinkedIn: [https://www.linkedin.com/in/francis-iwu-878973238/]
+Portfolio: [https://francis-personalportfolio.netlify.app/]
